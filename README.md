@@ -43,3 +43,7 @@ curl -s https://raw.githubusercontent.com/wesbragagt/devx/main/main.sh > devx.sh
 
 - cd/ (cd into the .git root of the current directory)
   <TBD example giph>
+
+## Important
+
+The aliases and functions used in the script will not persist across different session. If you want those to persist just copy them into your .bash-profile or .zshrc
