@@ -2,6 +2,8 @@
 
 # Setup nice utilities to navigate through a filesystem and edit files at the speed of thought
 
+# Currently for use with apt package manager
+
 export editor_to_use=${EDITOR:-"vim"}
 alias vi=$editor_to_use
 
