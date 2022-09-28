@@ -2,7 +2,18 @@
 
 DevX is a utility script that installs some nice tools for fast filesystem navigation and editing.
 
-## Install the following
+## Getting Started
+
+### Requires
+
+- curl
+- apt (other package managers to be supported)
+
+```
+curl -s https://raw.githubusercontent.com/wesbragagt/devx/main/main.sh | bash
+```
+
+## Installs the following
 
 - ripgrep
 - fzf
