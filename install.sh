@@ -1,6 +1,9 @@
 #!/usr/bin/env/bash
 
-alias vi="vim"
+# Setup nice utilities to navigate through a filesystem and edit files at the speed of thought
+
+export editor_to_use=${EDITOR:-"vim"}
+alias vi=$editor_to_use
 
 i_preinstall(){
   apt update -y
@@ -22,23 +25,24 @@ i_git(){
   command -v "git" || apt install git -y
 }
 
+export FZF_DEFAULT_COMMAND='rg --files --hidden --no-require-git --follow --glob "!.git/*" --glob "!node_modules/*"'
+
 # aliases
 fa(){
   if [[ $# -eq 1 ]]; then
       selected=$1
   else
-      # with a preview window
       if command -v bat &> /dev/null; then
         selected=`fzf --preview 'bat --style=numbers --color=always --line-range :500 {}'`
       else
         selected=`fzf`
       fi
-
   fi
 
-  vim $selected
-  if [[ $? -eq 0 ]]; then
-      exit 0
+  if [[ -z $selected ]]; then
+          echo "nothing to selected"
+  else
+          vim $selected
   fi
 }
 
@@ -46,9 +50,10 @@ fp(){
   items=`rg -l --hidden -g '!.git/' $@`
   selected=`echo "$items" | fzf --preview 'bat --style=numbers --color=always --line-range :500 {}'`
 
-  vim $selected
-  if [[ $? -eq 0 ]]; then
-      exit 0
+  if [[ -z $selected ]]; then
+          echo "nothing to selected"
+  else
+          vim $selected
   fi
 }
 
