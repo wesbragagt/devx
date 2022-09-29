@@ -2,6 +2,10 @@
 
 DevX is a utility script that installs some nice tools for fast filesystem navigation and editing.
 
+## Why?
+
+Imagine you ssh into a server that you need to do some work around files and the standard navigation just seems too slow. Well now you can utilize this tool to give you a boost on that navigation and editing.
+
 ## Getting Started
 
 ### Requires
