@@ -10,7 +10,7 @@ DevX is a utility script that installs some nice tools for fast filesystem navig
 - apt (other package managers to be supported)
 
 ```
-curl -s https://raw.githubusercontent.com/wesbragagt/devx/main/main.sh | bash
+curl -s https://raw.githubusercontent.com/wesbragagt/devx/main/main.sh > devx.sh && source devx.sh
 ```
 
 ## Installs the following
