@@ -6,7 +6,7 @@ What you are about to see is guaranteed to give you a blazingly fast results!
 
 ## What?
 
-DevX is a utility script that integrates with fzf,ripgrep, bat for fast filesystem navigation and editing.
+DevX is a utility script that integrates with fzf,ripgrep and bat for fast filesystem navigation and editing.
 
 ## Why?
 
