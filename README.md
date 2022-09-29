@@ -10,7 +10,7 @@ DevX is a utility script that integrates with fzf,ripgrep and bat for fast files
 
 ## Why?
 
-Imagine you ssh into a server that you are not very familiar and the standard navigation just seems too slow. Well now you can utilize this tool to give you a boost on that navigation and editing.
+Imagine you ssh into a server that you are not very familiar and the standard navigation just seems too slow. Well now you can utilize this tool to give you a boost.
 
 ## Getting Started
 
