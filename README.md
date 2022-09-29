@@ -2,7 +2,7 @@
 
 ## ⚠️ Watch
 
-What you are about to see is guaranteed to give you a blazingly fast dev experience.
+What you are about to see is guaranteed to give you a blazingly fast results!
 
 ## What?
 
