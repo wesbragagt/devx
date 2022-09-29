@@ -4,6 +4,7 @@
 
 What you are about to see is guaranteed to give you a blazingly fast dev experience.
 
+## What?
 
 DevX is a utility script that integrates with fzf,ripgrep, bat for fast filesystem navigation and editing.
 
