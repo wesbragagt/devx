@@ -33,13 +33,13 @@ curl -s https://raw.githubusercontent.com/wesbragagt/devx/main/main.sh > ~/devx.
 ## Adds the following aliases
 
 - fa (fuzzy search through all files in the current directory excluding .git and node_modules and will opens the selected file in the EDITOR of choice. default to vim)
-  <TBD example giph>
+  <img src="./assets/fa_example.gif" alt="fa alias example" height="300px"/>
 
 - fp (searches for a string passed in the current directory excluding .git and node_modules and will opens the selected file in the EDITOR of choice. default to vim)
   <TBD example giph>
 
 - cdl (fuzzy searches through all files in the current directory and cd into the directory of the selected file)
-  <TBD example giph>
+  <img src="./assets/cdl_example.gif" alt="fa alias example" height="300px" />
 
 - cd/ (cd into the .git root of the current directory)
   <TBD example giph>
