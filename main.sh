@@ -5,7 +5,7 @@
 # Currently for use with apt package manager
 
 export editor_to_use=${EDITOR:-"vim"}
-alias vi=$editor_to_use
+alias edit=$editor_to_use
 
 i_preinstall(){
   apt update -y
@@ -44,7 +44,7 @@ fa(){
   if [[ -z $selected ]]; then
           echo "nothing to selected"
   else
-          vim $selected
+          edit $selected
   fi
 }
 
@@ -55,7 +55,7 @@ fp(){
   if [[ -z $selected ]]; then
           echo "nothing to selected"
   else
-          vim $selected
+          edit $selected
   fi
 }
 
