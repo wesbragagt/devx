@@ -27,14 +27,6 @@ i_git(){
   command -v "git" || apt install git -y
 }
 
-
-i_preinstall
-i_ripgrep
-i_fzf
-i_bat
-i_git
-
-cat <<EOF >> ~/.bashrc
 export FZF_DEFAULT_COMMAND='rg --files --hidden --no-require-git --follow --glob "!.git/*" --glob "!node_modules/*"'
 
 # aliases
@@ -75,4 +67,9 @@ cdl(){
 cd/(){
   cd $(git rev-parse --show-toplevel)
 }
-EOF
+
+i_preinstall
+i_ripgrep
+i_fzf
+i_bat
+i_git

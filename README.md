@@ -20,7 +20,7 @@ Imagine you ssh into a server that you are not very familiar and the standard na
 - apt (other package managers to be supported)
 
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/wesbragagt/devx/main/main.sh)
+curl -s https://raw.githubusercontent.com/wesbragagt/devx/main/main.sh > ~/devx.sh && source ~/devx.sh
 ```
 
 ## Installs the following
